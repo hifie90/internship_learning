@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+<body>
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="cars">Choose a car:</label><br>
+    <select id="cars" name="cars" size="4" multiple><br>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+    </select><br>
+
+    <textarea name="message" rows="10" cols="30">
+        The cat is playing in the backyard.
+    </textarea>
+
+    <button type="button" onclick="alert('Response saved!')">Click Me!</button><br>
+</form>
+
+    <p>
+    Choose your favorite Web language:
+    </p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="Javascript">
+        <label for="javascript">Javascript</label>
+    </form>
+
+
+    
+<form>
+    <input type="checkbox" id="vechicle1" name="vechicle1" value="Bike">
+    <label for="vechicle1"> I have a bike</label><br>
+    <input type="checkbox" id ="vechicle2" name="vechicle2" value="Car">
+    <label for="vechicle2">I have a car</label><br>
+    <input type="checkbox" id="vechicle3" name="vechicle3" value="Boat">
+    <label for="vechicle3">I have a boat</label>
+
+</form>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" ><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

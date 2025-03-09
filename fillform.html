@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Responsive Form Practice</title>
+    </head>
+<body>
+    <div class ='container'>
+        <header>
+            <h1 id="title">SUBMIT YOUR COMPANY VACANCY:</h1>
+            <p id ='description'>
+                Please complete the form below and one of our team will be in touch to discuss your
+requirement.
+            </p>
+        </header>
+        
+        <form id = 'survey-form'>
+            <div class="form-input">
+                <label id = 'name-label'>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" class="form-input-size" required />
+            </div>
+            <div class="form-input">
+                <label id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="form-input-size" required />
+            </div>
+            <div class="form-input">
+                <label id="number-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]+" title="Only numbers allowed" class="form-input-size" required>
+            </div>
+
+            <div class="form-input">
+                <label for="title">Vacancy Title</label>
+                <input type="text" id="title" class="form-input-size" required />
+
+            </div>
+            <div class="form-input">
+                <label for="salary">Vacancy Salary</label>
+                <input type="number" id="salary" class="form-input-size" min="0" required />
+            </div>
+            <div class="form-input">
+                <label for="job-description">Upload Job Description or additional Company Information (*)</label>
+                <!---<input type="text" id="job-description" class="form-input-size" required>--->
+                <form method="post" enctype="multipart/form-data">
+                    <input name="file" type="file" multiple>
+                    <button type="submit">Upload</button>
+
+                </form>
+               
+            </div>
+
+            <div class="form-input">
+                <label for="additional-info">Additional Information (*)</label>
+                <input type="text" id="additional-info" class="form-input-size" required>
+            </div>
+
+            <div class="form-input">
+                <label for="contact-preference">Which is best for you to contact via email, phone, text message?</label>
+                <input type="text" id="contact-preference" class="form-input-size" required>
+            </div>
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
