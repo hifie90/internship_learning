@@ -42,14 +42,10 @@ requirement.
             <div class="form-input">
                 <label for="job-description">Upload Job Description or additional Company Information (*)</label>
                 <!---<input type="text" id="job-description" class="form-input-size" required>--->
-                <form method="post" enctype="multipart/form-data">
+                 <method="post" enctype="multipart/form-data">
                     <input name="file" type="file" multiple>
-                    <button type="submit">Upload</button>
-
-                </form>
                
             </div>
-
             <div class="form-input">
                 <label for="additional-info">Additional Information (*)</label>
                 <input type="text" id="additional-info" class="form-input-size" required>
@@ -62,8 +58,26 @@ requirement.
 
             <button type="submit">Submit</button>
 
+           
+
 
         </form>
+
+        
+    </div>
+    <script>
+        document.getElementById('vacancyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('confirmationMessage').style.display = 'block';
+        });
+    </script>
+    <div class="paragraph">
+        <h3 id="bold">SUBMIT CANDIDATE CV:</h3>
+        <p>
+            At Chloe’s HR & Recruitment Solutions Ltd,we are passionate about offering great services to our candidates. We believe that this can only be accomplished through taking a<br>
+            consultative and personal approach to each applicant. By doing so, we ensure we unlock the right opportunity for you. We do our upmost to be completely honest and open, in<br>
+            addition to treating every candidate’s application with discretion. For our candidates we search on your behalf and present the right roles achieving a successful hire for both parties.
+        </p>
     </div>
 
 

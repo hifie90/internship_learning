@@ -9,10 +9,13 @@ body{
     color: white;
 }
 
-.container{
+.container {
+  float: left;
   width: 100%;
   margin: 3.2rem auto 0 auto;
+  padding-left: 50px; /* Adjust this value as needed */
 }
+
 
 @media(min-width: 576px){
   .container{
@@ -51,10 +54,11 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-#survey-form{
+#survey-form {
   background: rgba(21, 20, 85, 0.7);
-  padding: 2.3rem 0.5rem;
+  padding: 2.3rem 1rem; /* Increased right padding for balance */
   border-radius: 0.3rem;
+  margin-left: 50px; /* Moves the form to the right */
 }
 
 .form-input{
@@ -81,4 +85,8 @@ input[type="number"] {
   outline: 0;
   border-style: none;
   margin-top: 0.4rem;  
+}
+
+.submit{
+
 }

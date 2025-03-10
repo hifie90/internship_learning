@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: white;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: white;
+            max-width: 700px;
+            margin: 50px 0;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            margin-left: 50px;
+            margin-bottom: 30px;
+
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+            
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 30%;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            margin-left:0px;
+        }
+
+        .left-align{
+            text-align: left;
+        }
+
+        #bold{
+            text-align: left;
+        }
+
+        .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">SUBMIT YOUR COMPANY VACANCY:</h1>
+        <p id ='description'>
+            Please complete the form below and one of our team will be in touch to discuss your
+requirement.
+        </p>
+    </header>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="company name" id="label-company">
+                Company Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your company name" />
+        </div>
+
+
+        <div class="form-control">
+            <label for="phone number" id="label-number">
+                Phone Number
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your phone number" />
+
+        </div>
+
+        <div class="form-control">
+            <label for="title" id="label-vacancy">
+               Vacancy Title
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" 
+                   placeholder="Enter your vacancy title" />
+        </div>
+
+        <div class="form-control">
+            <label for="vacancy" id="label-salary">
+                Vacancy Salary
+             </label>
+ 
+             <!-- Input Type Text -->
+             <input type="text" id="age" 
+                    placeholder="Enter your vacancy salary" />
+        </div>
+
+        <div class="form-control">
+            <label for="description" id="label-job">
+                Upload Job Description or additional Company Information (*)
+             </label>
+ 
+             <method="post" enctype="multipart/form-data">
+                    <input name="file" type="file" multiple>
+        </div>
+
+        <div class="form-control">
+            <label for="additional" id="label-info">
+                Additional Information (*)
+            </label>
+             <textarea name="info" id="info" 
+                placeholder="Enter your additional-info">
+             </textarea>
+        </div>
+
+        <div class="form-control">
+            <label for="contact" id="label-chloe">
+                Chloe HR & Recruitment Solutions Ltd would like to keep in touch via the contact
+                information provided
+            </label>
+            <h4>Please see a copy of our Privacy Policy click(TBC) </h4>
+            <object data="C:\Users\HOME\Documents\internship\pdf\policy.pdf" type="application/pdf" width="100%" height="300px">
+                <p><a href="pdf\policy.pdf">Download the policy here</a>.</p>
+            </object>
+        
+    </object>
+
+        </div>
+
+        <div class="form-control">
+            <label for="pefrence" id="label-contact">
+                Which is best for you to contact via email, phone, text message?
+             </label>
+ 
+             <!-- Input Type Text -->
+             <input type="text" id="preference" 
+                    placeholder="" />
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+   <!-- <div class="paragraph">
+        <h3 id="bold">SUBMIT CANDIDATE CV:</h3>
+        <p class="left-align">
+            At Chloe’s HR & Recruitment Solutions Ltd,we are passionate about offering great services to our candidates. We believe that this can only be <br>
+            accomplished through taking a consultative and personal approach to each applicant. By doing so, we ensure we unlock the right opportunity for you.<br>
+            We do our upmost to be completely honest and open, in addition to treating every candidate’s application with discretion. For our candidates we search<br>
+            on your behalf and present the right roles achieving a successful hire for both parties.
+        </p>
+    </div> -->
+
+
+</body>
+
+</html>
