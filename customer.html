@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-color: white;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        #description {
+            text-align: left; /* Align text to the left */
+            margin-left: 20px; /* Adds space from the left */
+            line-height: 1.5; /* Makes text easier to read */
+            font-size: 16px;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: white;
+            max-width: 700px;
+            margin: 50px 0;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            margin-left: 50px;
+            margin-bottom: 30px;
+
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+            
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 30%;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            margin-left:0px;
+        }
+
+        .left-align{
+            text-align: left;
+        }
+
+        #bold{
+            text-align: left;
+        }
+
+        .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">SUBMIT CANDIDATE CV:</h1>
+        <p id ='description'>
+            At Chloe’s HR & Recruitment Solutions Ltd,we are passionate about offering great services to our candidates.We believe that this can only be accomplished through taking a consultantative and personal approach to each applicant. By doing so, we ensure we unlock
+            the right opportunity for you. We do our upmost to be completely honest and open, in
+            addition to treating every candidate’s application with discretion. For our candidates we
+            search on your behalf and present the right roles achieving a successful hire for both parties.
+        </p>
+
+        <h4>CANDIDATE COMMITMENT:</h4>
+        <p id="description">
+            Fully GDPR (General Data Protection Regulation) complaint – your data is encrypted and fully protected with us. We interview you in person before presenting you for any jobs. We will never
+            send your CV <br> to a client before getting your permission first. We will brief you on all aspect of the role- giving you a well – rounded view of it and the business and answer and any questions you
+            may have. We will keep<br> you informed throughout the process and will do our best to get as detailed client feedback as possible after interviews.
+
+        </p>
+
+    </header>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Your Full Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="name" 
+                   placeholder="Enter your full name" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Your Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" 
+                   placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+            <label for="phone number" id="label-number">
+                Phone Number
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="number" 
+                   placeholder="Enter your phone number" />
+
+        </div>
+
+        <div class="form-control">
+            <label for="place" id="label-address">
+               Address
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="address" 
+                   placeholder="Enter your address" />
+        </div>
+
+        <div class="form-control">
+            <label for="nationality" id="label-nationality">
+                Nationality
+             </label>
+ 
+             <!-- Input Type Text -->
+             <input type="text" id="nationality" 
+                    placeholder="Enter your nationality" />
+        </div>
+
+        <div class="form-control">
+            <label for="train" id="label-station">
+                Close Tube/Train Station
+             </label>
+ 
+             <input type="text" id="trainstation" 
+                    placeholder="Enter your Train Station" />
+        </div>
+
+        <div class="form-control">
+            <label for="ideal" id="label-location">
+                Ideal location for work
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="work" 
+                   placeholder="Enter your ideal locations for work" />
+        </div>
+
+        <div class="form-control">
+            <label for="notice" id="label-period">
+                Notice Period
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="notice" 
+                   placeholder="Enter your notice period" />
+        </div>
+
+        <div class="form-control">
+            <label for="position" id="label-search">
+                Position Sought
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="position" 
+                   placeholder="Enter your sought position" />
+        </div>
+
+        <div class="form-control">
+            <label for="work" id="label-types">
+                Type of Work required
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="work" 
+                   placeholder="Enter your type of work" />
+        </div>
+
+        <div class="form-control">
+            <label for="salary" id="label-salary">
+                Required Salary
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="salary" 
+                   placeholder="Enter your Salary expectation" />
+        </div>
+
+        <div class="form-control">
+            <label for="CV" id="label-resume">
+                Attached CV
+             </label>
+ 
+             <method="post" enctype="multipart/form-data">
+                    <input name="file" type="file" multiple>
+        </div>
+
+        <div class="form-control">
+            <label for="contact" id="label-chloe">
+                Chloe HR & Recruitment Solutions Ltd would like to keep in touch via the contact
+                information provided
+            </label>
+            <h4>Please see a copy of our Privacy Policy click(TBC) </h4>
+            <object data="C:\Users\HOME\Documents\internship\pdf\policy.pdf" type="application/pdf" width="100%" height="300px">
+                <p><a href="pdf\policy.pdf">Download the policy here</a>.</p>
+            </object>
+        
+        </div>
+
+        <div class="form-control">
+            <label for="pefrence" id="label-contact">
+                Which is best for you to contact via email, phone, text message?
+             </label>
+ 
+             <!-- Input Type Text -->
+             <input type="text" id="preference" 
+                    placeholder="" />
+        </div>
+
+        
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+
+
+</body>
+
+</html>
