@@ -1,92 +1,55 @@
-html{
-    font-size: 16px;
-}
-
-body{
-    background-color: rgba(98, 95, 241, 0.635);
-    margin: 0;
-    font-family: sans-serif;
-    color: white;
+body {
+    background-color: white;
+    font-family: Verdana;
+    text-align: center;
 }
 
 .container {
-  float: left;
-  width: 100%;
-  margin: 3.2rem auto 0 auto;
-  padding-left: 50px; /* Adjust this value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-@media(min-width: 576px){
-  .container{
-    max-width: 540px;
-  }
+form {
+    background-color: white;
+    max-width: 700px;
+    margin: 50px 0;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
-@media(min-width: 768px){
-  .container{
-    max-width: 720px
-  }
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
 }
 
-header{
-    text-align: center;
-    margin-bottom: 1.5rem;
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
 }
 
-h1{
-  font-weight: 400;
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
 }
 
-#description{
-  font-weight: 200;
-  font-style: italic;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-#survey-form {
-  background: rgba(21, 20, 85, 0.7);
-  padding: 2.3rem 1rem; /* Increased right padding for balance */
-  border-radius: 0.3rem;
-  margin-left: 50px; /* Moves the form to the right */
-}
-
-.form-input{
-  margin: 0 2.5rem 1.2rem 2rem;
-}
-
-.form-input-size{
-  display: block;
-  width: 100%;
-  height: 1.5rem;
-  padding: 0.3rem 0.4rem;
-  border-radius: 0.2rem;
-  outline: 0;
-  border-style: none;
-  margin-top: 0.4rem;  
-}
-
-.input{
-  display: block;
-  width: 100%;
-  height: 1.5rem;
-  padding: 0.3rem 0.4rem;
-  border-radius: 0.2rem;
-  outline: 0;
-  border-style: none;
-  margin-top: 0.4rem;  
-}
-
-.submit{
-
+button {
+    background-color: #05c46b;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 30%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 0px;
 }
